@@ -9,7 +9,5 @@ class Solution:
             num_copy >>= 1
             p <<= 1
             p |= 1
-        print(p)
-        print(num)
             
         return num ^ p
