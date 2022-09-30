@@ -26,6 +26,8 @@ class Solution:
             
             while len(stack) > 0 and not stack[-1]:
                 stack.pop(-1)
+            while len(stack) > 0 and not stack[0]:
+                stack.pop(0)
             max_ = max(max_ , len(stack))
         return max_
                 
